@@ -1,0 +1,59 @@
+ Nomes:
+
+ Felipe Teixeir Schefer
+ Felipi Thiesen Tidra
+
+/////////////////////////////////////////////
+
+ Lea-me
+
+ Para subir o Baco de dados
+abra o diertorio:
+
+--/assets
+   |
+    --/sql
+       |
+	--/dataBaseCrud1
+
+ Copie o codigo de dataBaseCrud1 
+e cole-o no seu phpMyAdmin e por fim
+execute-o.
+  
+/////////////////////////////////////////////
+
+ Comece executando o pirataflix
+
+ Cadastrar o email:
+ Clique em 'watch free for 30 days'
+abrirá uma nova pagina a de cadastre-se
+ai você pode fazer o teste de validação.
+
+ Uma vez cadastrado abrirá a pagina dos
+filmes, acima você verá o link 'movies'
+clique-o para adicionar seus filmes.
+
+ Uma vez que acesse verá os campos de
+movie title e movie link para adicionar 
+o filme.
+
+ Exemplos par seu uso:
+
+ nomes               linkis
+
+ Deadpool	 Sy8nPI85Ih4
+ Rock lee	 VgDgWzBL7s4
+ Dragon ball z	 5hcbImg97UI
+
+ Agora você pode clicar no link acima Home
+abrirá uma nova pagina depois clque na 
+igrenagem e escolha settings quando 
+abrir outra pagina vera seu email onde
+poderás alterar a o endereço de email tanto
+quanto sua senha ou simplente adicionar outros
+e deletalos.
+
+ Por fim você pode dar um logout e ir para a tela
+de login e tester seu novo email e senha.
+
+/////////////////////////////////////////////////

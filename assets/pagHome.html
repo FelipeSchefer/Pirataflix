@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pirataflix</title>
+
+        <!-- FRAMEWORK bootstrap  -->
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+
+        <link rel="stylesheet" href="./css/movies.css">
+        <link rel="stylesheet" href="./fontawsome/css/all.css"> 
+        <!-- CSS PAGINA -->
+        <link rel="stylesheet" href="css/stylePagHome.css">
+    </head>
+    <body>
+        <div id="loader" class="loader">
+        </div>
+        <header>
+            <div class="center">
+                <div class="header-left">
+                    <a href=""><img src="img/pirataflixW.png"></a>
+                    <div class="menu-header">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="series.php">Series</a></li>
+                            <li><a href="movies.php">Movies</a></li>
+                        </ul>
+                    </div><!--menu-header-->
+                </div><!--header-left-->
+                <div class="header-right">
+                    <div class="search">
+                        <i class="fa fa-search"></i>
+                    </div><!--search-->
+                    <i class="fa fa-gift"></i>
+                    <div class="notifications">
+                        <div class="circle-notifications">
+                            <span>10</span>
+                        </div><!--circle-notifications-->
+                        <i class="fa fa-bell"></i>
+                    </div><!--notifications-->
+                    <div class="menu-bar">
+                        <ul>
+                            <li><a><i class="fa fa-cogs"></i></a>
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li><a href="pagSettings.php">Settings</a></li>
+                                        <hr>
+                                        <li><a href="#">About us</a></li>
+                                        <hr>
+                                        <li><a href="index.html">Logout</a></li>
+                                    </ul>
+                                </div><!--sub-menu-->
+                            </li>
+                        </ul>
+                    </div><!--menu-bar-->
+                </div>
+                <div class="clear"></div>
+            </div><!--center-->
+        </header>
+        <section class="spotlight">
+            <div class="center">
+                <div class="overlay"></div><!--overlay-->
+                <div class="spotlight-text">
+                    <h2>Avengers</h2>
+                    <h3>Watch the entire Marvel movie sequence, now here<br> on Pirataflix!</h3>
+                    <p>Avengers, are a group of comic book superheroes published<br> in the United States by Marvel Comics.</p>
+                    <br>
+                    <a href=""><i class="fa fa-play"></i> Watch</a>
+                    <a href=""><i class="fa fa-plus"></i> My list</a>
+                    <a href=""><i class="fa fa-info-circle"></i> More information</a>
+                </div><!--spotlight-text-->
+            </div><!--center-->
+        </section><!--spotlight-->
+
+
+        <!-- /////////////////////////////////////////// -->
+        <form id="myform" action="process.php" method="GET">
+            <div class="items-wrapper">
+              <div class="items">
+                  <div class="item">
+                    <img src="./img/deadpool.jpg"/>
+                    <a href="">
+                      <i class="far fa-play-circle"></i>
+                    </a>
+                    <a type="button" onclick="myFunction()" value="Submit form" href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./img/batman.jpg"/>
+                    <a href="https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself">
+                      <i class="far fa-play-circle"></i>
+                    </a>
+                    <a href="https://www.google.com/">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./img/matrix1.jpeg"/>
+                    <a href="https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself">
+                      <i class="far fa-play-circle"></i>
+                    </a>
+                    <a href="https://www.google.com/">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./img/starWars.jpg"/>
+                    <a href="https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself">
+                      <i class="far fa-play-circle"></i>
+                    </a>
+                    <a href="https://www.google.com/">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./img/matrix2.jpg"/>
+                    <a href="https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself">
+                      <i class="far fa-play-circle"></i>
+                    </a>
+                    <a href="https://www.google.com/">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./img/spiderman.jpg"/>
+                    <a href="https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself">
+                      <i class="far fa-play-circle"></i>
+                    </a>
+                    <a href="https://www.google.com/">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./img/wonderwoman.jpg"/>
+                    <a href="https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself">
+                      <i class="far fa-play-circle"></i>
+                    </a>
+                    <a href="https://www.google.com/">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./img/thor.jpg"/>
+                    <a href="https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself">
+                      <i class="far fa-play-circle"></i>
+                    </a>
+                    <a href="https://www.google.com/">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="items-wrapper">
+                <div class="items1">
+                  <div class="item">
+                    <img src="./img/naruto.png"/>
+                      <i class="far fa-play-circle"></i>
+                      <i class="fas fa-plus-circle"></i>                        
+                  </div>
+                  <div class="item">
+                    <img src="./img/dbz.jpg"/>
+                      <i class="far fa-play-circle"></i>
+                      <i class="fas fa-plus-circle"></i>                        
+                  </div>
+                  <div class="item">
+                    <img src="./img/inuyasha.png"/>
+                      <i class="far fa-play-circle"></i>
+                      <i class="fas fa-plus-circle"></i>                        
+                  </div>
+                  <div class="item">
+                    <img src="./img/sao.jpg"/>
+                      <i class="far fa-play-circle"></i>
+                      <i class="fas fa-plus-circle"></i>                        
+                  </div>
+                  <div class="item">
+                    <img src="./img/bleach.jpg"/>
+                      <i class="far fa-play-circle"></i>
+                      <i class="fas fa-plus-circle"></i>                        
+                  </div>
+                  <div class="item">
+                    <img src="./img/aonoexorcist.jpg"/>
+                      <i class="far fa-play-circle"></i>
+                      <i class="fas fa-plus-circle"></i>                        
+                  </div>
+                  <div class="item">
+                    <img src="./img/onepunchman.jpg"/>
+                      <i class="far fa-play-circle"></i>
+                      <i class="fas fa-plus-circle"></i>                        
+                  </div>
+                  <div class="item">
+                    <img src="./img/fullmetalalchemist.jpg"/>
+                      <i class="far fa-play-circle"></i>
+                      <i class="fas fa-plus-circle"></i>                        
+                  </div>
+                </div>
+              </div>
+        
+              <div class="items-wrapper">
+                <div class="items2">
+                  <div class="item">
+                    <img src="./img/friends.jpg"/>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                  <div class="item">
+                    <img src="./img/howimetyourmother.jpg"/>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                  <div class="item">
+                    <img src="./img/juon.jpg"/>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                  <div class="item">
+                    <img src="./img/twd.jpg"/>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                  <div class="item">
+                    <img src="./img/vikings.jpg"/>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                  <div class="item">
+                    <img src="./img/cobrakai.jpg"/>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                  <div class="item">
+                    <img src="./img/vanhelsing.jpg"/>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                  <div class="item">
+                    <img src="./img/punisher.jpg"/>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+              </div>
+            </div>
+        </form>
+
+        <script>
+            setTimeout(function(){
+                loader.style.display = 'none';
+            },5000);
+
+        </script>
+
+        <script src="./assets/js/movies.js"></script>
+    </body>
+</html>

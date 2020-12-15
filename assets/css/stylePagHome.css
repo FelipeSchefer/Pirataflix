@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica";
+}
+
+.loader{
+    position: fixed;
+    z-index: 99999;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    opacity: 1;
+    background-image: url('../img/intro.gif');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-color: #e20814;
+}
+
+
+body{
+    background: gray;
+}
+
+/*
+    home header menu
+*/
+
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    
+}
+
+.clear{
+    clear:both;
+}
+
+
+header{
+    background: black;
+    padding: 12px 0;
+    height: 55px;
+}
+
+/*
+    home header-left
+*/
+
+.header-left{
+    float: left;
+}
+
+.header-left img{
+    max-width: 120px;
+    margin-top: -30px;
+    
+}
+
+.menu-header{
+    position: relative;
+    top:-53px;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.menu-header li{
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+
+.menu-header a{
+    color: white;
+    text-decoration: none;
+}
+
+/*
+    end header-left
+*/
+
+/*
+    home header-rigth
+*/
+
+.header-right{
+    float:right;
+    margin-top: 0;
+}
+
+.search,
+.notifications, .menu-bar{
+    display: inline-block;
+}
+
+.notifications{
+    position: relative;
+}
+
+.circle-notifications{
+    position: absolute;
+    right: 0;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: #e50914;
+    text-align: center;
+}
+
+.circle-notifications span{
+    font-size: 12px;
+    color: white;
+    vertical-align: 20px;
+}
+
+.header-right i{
+    margin: 0 14px;
+    cursor: pointer;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+    
+}
+
+.menu-bar ul li{
+    width: 100px;
+    margin 15px;
+    padding: 10px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-bar ul li:hover{
+    background: black;
+    border-radius: 3px;
+}
+
+.sub-menu{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: black;
+    margin-top: 9px;
+    margin-left: -10px;
+}
+
+.menu-bar ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu ul li a:hover{
+    color: red;
+}
+
+/*
+    end header-rigth
+*/
+
+
+/*
+    end header menu
+*/
+
+/*
+    home section spotlight
+*/
+
+.spotlight{
+    background-image: url("../img/banner1.png");
+    background-size: cover;
+    width: 100%;
+    min-height: 480px;
+    background-position: center;
+    top: -80px;
+}
+
+.overlay{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.spotlight-text{
+    color: white;
+    position: absolute;
+    margin-top:0;
+    top: 120px;
+}
+
+.spotlight-text h2{
+    color: #b10f17;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.spotlight-text h3{
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+.spotlight-text p{
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.spotlight-text a{
+    background-color: rgba(100,100,100,0.3);
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    display: inline-block;
+    font-size:23px; 
+    margin-right: 15px;
+}
+
+.spotlight-text a:hover{
+    background: white;
+    color: black;
+}
+
+/*
+    end section spotlight
+*/

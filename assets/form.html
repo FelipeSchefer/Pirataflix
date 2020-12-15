@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Formulario</title>
+        <!-- FRAMEWORK bootstrap  -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <!-- FONTES -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+        <!-- CSS PAGINA -->
+        <link rel="stylesheet" href="./css/main.css" />
+        <!-- CSS FORM -->
+        <link rel="stylesheet" href="./css/form.css" />
+    </head>
+
+    <body class="body">
+        <!-- FORMULARIO////////////////////////////////////////////////////// -->
+        <section class="form-section section">
+            <h1 id="h1" class="h1"></h1>
+            <div class="form-wrapper">
+                <form action="processForm.php" method="POST" name="formName" class="form">
+                    <h1>Cadastre-se</h1>
+                    <div class="container cont-form m-top-2">
+                        <div class="form-row">
+
+                            <div class="col">
+                                <label for="cadastroNome">*Nome</label>
+                                <input type="text" id="cadastroNome" class="form-control" name="name" required />
+                            </div>
+                            <div class="col">
+                                <label for="cadastroSobrenome">*Sobrenome</label>
+                                <input type="text" id="cadastroSobrenome" class="form-control" name="lastName" required />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputAddress">Endereço</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Ex: Avenida Espirito Santo nº123" name="address">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">Cidade</label>
+                                <input type="text" class="form-control" id="inputCity" name="city">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Estado</label>
+                                <select name="state" class="form-control">
+                                    <option selected>Escolha...</option>
+                                    <option value="RS">Rio Grande do Sul </option>
+                                    <option value="SP">São Paulo         </option>
+                                    <option value="RJ">Rio de Janeiro    </option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label>CEP</label>
+                                <input type="text" class="form-control" name="CEP">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6 flexCss">
+                                    <label for="cadastroEmail">*Email</label>
+                                    <input type="email" id="cadastroEmail" name="emailSent" required />
+                                </div>
+                                <div class="form-group col-md-6 flexCss">
+                                    <label for="cadastroSenha">*Senha</label>
+                                    <input type="password" id="cadastroSenha" name="passwordSent" required />
+                                </div>
+                            </div>
+                            <button id="sentEmail" type="submit" name="sentLogin" class="btn-login" onclick="return validarForm()">Login</button>
+
+                        </div>
+                    </div>
+                    <h4><p id="msgErro" style="color: white;"></p></h4>
+                </form>
+            </div>
+            <small>Are you not a member yet? click here and get your 30 days for free</small>
+        </section>
+        <!-- //////////////////////////////////////////////////////FORMULARIO -->
+        <ul class="squares"></ul>
+
+        <!-- FOOTER////////////////////////////////////////////////////////// -->
+        <footer>
+            <div class="row-lightGray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 tex-center">
+                            <img id="logoTipoFooter" src="img/pirataflixW.png" alt="LogoTipo">
+                        </div>
+
+                        <div class="col-md-10">
+                            <div class="row rowCols">
+                                <div class="col-md-4 colPopularPost">
+                                    <h4>CONTACT</h4>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fa fa-envelope"></i>
+                                            felipe_official@outlook.com
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-phone"></i>
+                                            55 51 989573803
+                                        </li><br>
+                                        <li>
+                                            <i class="fa fa-envelope"></i>
+                                            felipiths58@gmail.com
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-phone"></i>
+                                            55 51 992233599
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-4 colLinks">
+                                    <h4>LINKS</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="../pirataflix.html"><i class="fa fa-angle-right"></i>Home</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-4 colGetInTouch">
+                                    <h4>GET IN TOUCH</h4>
+                                    <address>
+                                        <i class="fa fa-map-marker-alt"></i> <span> Cachoerinha<br>RS, Brasil</span>
+                                    </address>
+
+                                    <p>Do you have an idea? We developed it for you!</p>
+
+                                    <ul class="list-unstyled listSocials">
+                                        <li>
+                                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-darkGray">
+                <div class="container">
+                    <p class="float-left">Copyright &copy; Pirataflix 2020. All rights reserved.</p>
+                    <p class="float-right">Created by Felipe Teixeira Schefer & Felipi Thiesen Tidra.&reg;</p>
+                </div>
+            </div>
+        </footer>
+        <!--  ///////////////////////////////////////////////////////////////////FOOTER  -->
+
+
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+        <script src="./js/bootstrap.min.js"></script>
+       
+        <script src="./js/script.js"></script>
+        <script src="./js/validacao.js"></script>
+        <!-- INCONES -->
+        <script src="https://kit.fontawesome.com/169c5cbd4c.js" crossorigin="anonymous"></script>
+    </body>
+
+</html>

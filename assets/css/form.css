@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+.body {
+  height: 140vh;
+}
+
+.body {
+  background-color: #8a0000;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1 {
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin: 20px 0;
+  color: white;
+}
+/* // FORM STYLE /////////////////////////////////////////////////////////////////////////////// */
+.form {
+  margin: 20px 0;
+  background-color: #191919;
+  padding: 30px 25px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.form .input-block {
+  margin-bottom: 20px;
+}
+
+label {
+  color: white;
+  padding: 5px;
+}
+
+small {
+  color: whitesmoke;
+}
+
+.form .input-block label {
+  font-size: 14px;
+  color: white;
+}
+
+.form .input-block input {
+  width: 100%;
+  display: block;
+  margin-top: 8px;
+  padding: 7px;
+  font-size: 16px;
+  color: #8a0000;
+  border-radius: 2px;
+  border: 1px solid white;
+  outline-color: #8a0000;
+}
+
+.form .btn-login {
+  display: block;
+  min-width: 120px;
+  border: none;
+  background-color: #8a0000;
+  color: white;
+  border-radius: 25px;
+  margin: auto;
+  padding: 7px;
+}
+
+.form h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+button[type="submit"] {
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: red;
+}
+/* //////////////////////////////////////////////////////////////////////////////////// */
+
+/* APARIÇÃO DO FORM */
+.form {
+  overflow: hidden;
+  animation: fade 0.2s;
+}
+
+.form .input-block:nth-child(1) {
+  animation: move 500ms;
+}
+
+.form .input-block:nth-child(2) {
+  animation: move 400ms;
+  animation-delay: 100ms;
+  animation-fill-mode: backwards;
+}
+
+.form .flexCss {
+  display: inline-flex;
+}
+
+.form .btn-login {
+  animation: move 400ms;
+  animation-delay: 250ms;
+  animation-fill-mode: backwards;
+}
+
+/*//////////////////////////////////////////////////////////////// FOOTER */
+footer{
+    margin-top: 10;
+    width: 100%;
+    margin-left: 0;
+}
+
+footer .row-lightGray{
+    height: 220px;
+    background-color: #171F26;
+}
+
+footer .row-darkGray{
+    height: 90px;
+    background-size:cover;
+    background-color: #11171D;
+    border-top: #242D37 1px solid;
+}
+
+footer .float-left{
+    color: #666;
+    font-family: 'OpenSans';
+    font-size: 16px;
+}
+
+footer .row-darkGray{
+    color: white;
+    font-family: 'OpenSans';
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer .row-darkGray p{
+    line-height: 70px;
+    margin-bottom: 0;
+}
+
+footer #logoTipoFooter{
+    margin-top: 0;
+    height: 200px;
+    margin-left: -85px;
+}
+
+footer .rowCols{
+    margin-top: 40px;
+    color: #FFF;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+footer .rowCols a{
+    margin-top: 40px;
+    color: #FFF;
+    font-family: Arial;
+    font-size: 14px;
+    margin: 0 6px;
+}
+
+footer .rowCols h4{
+    font-family: 'OpenSans';
+    font-size: 16px;
+    color: #FFF;
+    padding-bottom: 17px;
+    border-bottom: #242D37 1px solid;
+}
+
+footer .rowCols h5{
+    color: #666;
+    font-family: Arial;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+footer .rowCols time{
+    color: #FDE092;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+footer .colLinks .fa{
+    margin: 0 6px;
+}
+
+footer .colGetInTouch address{
+    color: #666;
+    font-family: Arial;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+footer .colGetInTouch address span{
+    display: inline-block;
+    margin-left: 0;
+}
+
+footer .colGetInTouch address i{
+    position: relative;
+    top: -20px;
+}
+
+footer .colGetInTouch p{
+    color: #9B9B9B;
+    margin: 0 6px;
+    margin-left: 3px;;
+    color: #666;
+    font-size: 14px;
+}
+
+
+footer .listSocials {
+    margin-top: 7px;
+}
+
+footer .listSocials li{
+    display: inline-block;
+}
+footer .listSocials a{
+    display: block;
+    border: #9B9B9B 1px solid;
+    height: 28px;
+    width: 28px;
+    line-height: 20px;
+    border-radius: 14px;
+    text-align: center;
+}
+footer .listSocials i{
+    font-size: 16px;
+    margin: 7px auto;
+}
+
+footer .container li a:hover{
+    color: red;
+}
+
+
+#msgErro{
+    margin-top: 20px;
+}

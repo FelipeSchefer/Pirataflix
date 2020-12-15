@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica";
+}
+
+body{
+    background: gray;
+}
+
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    
+}
+
+
+.clear{
+    clear:both;
+}
+
+header{
+    background: black;
+    padding: 12px 0;
+    height: 55px;
+}
+
+/*
+    home header-left
+*/
+
+.header-left{
+    float: left;
+}
+
+.header-left img{
+    max-width: 120px;
+    margin-top: -30px;
+    
+}
+
+.menu-header{
+    position: relative;
+    top:-17px;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.menu-header li{
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+
+.menu-header a{
+    color: white;
+    text-decoration: none;
+}
+
+/*
+    end header-left
+*/
+
+/*
+    home header-rigth
+*/
+
+.header-right{
+    float:right;
+    margin-top: 0;
+}
+
+.header-right i{
+    margin: 0 14px;
+    cursor: pointer;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+    
+}
+
+.menu-bar ul li{
+    width: 70px;
+    margin 15px;
+    padding: 10px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-bar ul li:hover{
+    background: black;
+    border-radius: 3px;
+}
+
+.sub-menu{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: black;
+    margin-top: 9px;
+    margin-left: -20px;
+}
+
+.menu-bar ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu ul li a:hover{
+    color: red;
+}
+
+footer{
+    margin-top: 110px;
+    width: 100%;
+    margin-left: 0;
+}
+
+footer .row-lightGray{
+    height: 220px;
+    background-color: #171F26;
+}
+
+footer .row-darkGray{
+    height: 90px;
+    background-size:cover;
+    background-color: #11171D;
+    border-top: #242D37 1px solid;
+}
+
+footer .float-left{
+    color: #666;
+    font-family: 'OpenSans';
+    font-size: 16px;
+}
+
+footer .row-darkGray{
+    color: white;
+    font-family: 'OpenSans';
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer .row-darkGray p{
+    line-height: 70px;
+    margin-bottom: 0;
+}
+
+footer #logoTipoFooter{
+    margin-top: 0;
+    height: 200px;
+    margin-left: -85px;
+}
+
+footer .rowCols{
+    margin-top: 40px;
+    color: #FFF;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+footer .rowCols a{
+    margin-top: 40px;
+    color: #FFF;
+    font-family: Arial;
+    font-size: 14px;
+    margin: 0 6px;
+}
+
+footer .rowCols h4{
+    font-family: 'OpenSans';
+    font-size: 16px;
+    color: #FFF;
+    padding-bottom: 17px;
+    border-bottom: #242D37 1px solid;
+}
+
+footer .rowCols h5{
+    color: #666;
+    font-family: Arial;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+footer .rowCols time{
+    color: #FDE092;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+footer .colLinks .fa{
+    margin: 0 6px;
+}
+
+footer .colGetInTouch address{
+    color: #666;
+    font-family: Arial;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+footer .colGetInTouch address span{
+    display: inline-block;
+    margin-left: 0;
+}
+
+footer .colGetInTouch address i{
+    position: relative;
+    top: -20px;
+}
+
+footer .colGetInTouch p{
+    color: #9B9B9B;
+    margin: 0 6px;
+    margin-left: 3px;;
+    color: #666;
+    font-size: 14px;
+}
+
+
+footer .listSocials {
+    margin-top: 7px;
+}
+
+footer .listSocials li{
+    display: inline-block;
+}
+footer .listSocials a{
+    display: block;
+    border: #9B9B9B 1px solid;
+    height: 28px;
+    width: 28px;
+    line-height: 20px;
+    border-radius: 14px;
+    text-align: center;
+}
+footer .listSocials i{
+    font-size: 16px;
+    margin: 7px auto;
+}
+
+footer .container li a:hover{
+    color: red;
+}
+
+}
+video{
+    width: 60%;
+}
